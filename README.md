@@ -111,7 +111,7 @@
   </tr>
   <tr>
     <td valign="top">
-      <b>HippoFormer</b><br/>
+      <b>SalienceFormer</b><br/>
       <sub><i>Completed</i></sub>
       <br/><br/>
       <sub>Hippocampus-inspired transformer encoding memory formation and consolidation as custom layers with salience gating. Hit <b>11.83 perplexity on WikiText-2</b> — 35% better than Gemma-2B baseline. Validated across 15 ablation variants with statistical significance testing.</sub>
@@ -127,7 +127,7 @@
       <code>LangGraph</code> <code>Qdrant</code> <code>DeBERTa</code> <code>Llama 3.1</code>
     </td>
     <td valign="top">
-      <b>AgentReplay</b><br/>
+      <b>AgentTraceDAG</b><br/>
       <sub><i>Active</i></sub>
       <br/><br/>
       <sub>Time-travel debugger for LLM agents. Intercepts every step into a SQLite DAG. React dashboard scrubs backward through context windows, tool payloads, and token usage. Supports LangChain, OpenAI, and Anthropic.</sub>
