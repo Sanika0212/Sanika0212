@@ -33,8 +33,8 @@
       <sub>in development</sub>
     </td>
     <td valign="middle">
-      <b>Self-Healing RAG Engine</b> — a 10-layer production RAG with three-way hybrid search (dense + sparse + KG), multi-signal confidence estimation, and LangGraph-orchestrated agentic self-correction.<br/>
-      <sub>Owning data ingestion, BM25 + embedding + KG hybrid retrieval, LangGraph orchestration, monitoring dashboard, and Docker deployment. Claim-level causal validation to reduce hallucinations at retrieval time.</sub>
+      <b>Groundsight</b>: checks a RAG answer claim by claim against its sources, names why each unsupported claim went wrong, and confirms the cause by replaying the answer with the fix.<br/>
+      <sub>MiniCheck and NLI checkers calibrated on RAGTruth's human labels (0.81 AUROC, against 0.61 for embedding similarity), conformal recall targets, root-cause triage and likelihood-based attribution. Runs locally on open models.</sub>
     </td>
   </tr>
   <tr>
@@ -93,30 +93,30 @@
       <code>PyTorch</code> <code>MedNeXt</code> <code>ViT</code> <code>MONAI</code>
     </td>
     <td valign="top">
-      <b>Self-Healing RAG</b><br/>
-      <sub><i>In development</i></sub>
-      <br/><br/>
-      <sub>10-layer hybrid retrieval (dense + sparse + KG) with multi-signal confidence estimation and agentic self-correction via LangGraph. Claim-level causal validation.</sub>
-      <br/><br/>
-      <code>FastAPI</code> <code>LangGraph</code> <code>pgvector</code> <code>Redis</code> <code>Docker</code>
-    </td>
-    <td valign="top">
-      <b>VectorLens</b><br/>
+      <b>Groundsight</b><br/>
       <sub><i>Active</i></sub>
       <br/><br/>
-      <sub>Local-first observability tool surfacing which retrieved chunks caused each sentence in LLM output. LIME-style bounded perturbation for causal importance; httpx transport patching for transparent interception.</sub>
+      <sub>Claim-level grounding checks for RAG answers. Flags unsupported claims with a calibrated recall guarantee, triages each into one of six causes and confirms the cause by counterfactual replay.</sub>
       <br/><br/>
-      <code>FastAPI</code> <code>SBERT</code> <code>React</code> <code>Tailwind</code>
+      <code>Transformers</code> <code>MiniCheck</code> <code>NLI</code> <code>Conformal prediction</code>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/Sanika0212/Counterfact">Counterfact</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>Finds the step that broke an LLM agent by counterfactual replay: repair one step, replay the rest with the same randomness. Names the root cause in <b>97%</b> of 180 failing runs, against 63% for an LLM reading the trace.</sub>
+      <br/><br/>
+      <code>Python</code> <code>httpx</code> <code>OpenTelemetry</code> <code>SQLite</code>
     </td>
   </tr>
   <tr>
     <td valign="top">
-      <b>SalienceFormer</b><br/>
-      <sub><i>Completed</i></sub>
+      <b><a href="https://github.com/Sanika0212/EngramLM">EngramLM</a></b><br/>
+      <sub><i>Released</i></sub>
       <br/><br/>
-      <sub>Hippocampus-inspired transformer encoding memory formation and consolidation as custom layers with salience gating. Hit <b>11.83 perplexity on WikiText-2</b> — 35% better than Gemma-2B baseline. Validated across 15 ablation variants with statistical significance testing.</sub>
+      <sub>Causal, salience-gated memory for Hugging Face language models. Lifts cross-segment recall from chance (3%) to <b>38%</b>; learned salience beats random writes under a tight budget; numerically audited to never see future tokens.</sub>
       <br/><br/>
-      <code>PyTorch</code> <code>PEFT/LoRA</code> <code>HuggingFace</code>
+      <code>PyTorch</code> <code>Transformers</code> <code>PEFT/LoRA</code>
     </td>
     <td valign="top">
       <b>UnMask</b><br/>
@@ -127,12 +127,12 @@
       <code>LangGraph</code> <code>Qdrant</code> <code>DeBERTa</code> <code>Llama 3.1</code>
     </td>
     <td valign="top">
-      <b>AgentTraceDAG</b><br/>
-      <sub><i>Active</i></sub>
+      <b><a href="https://github.com/Sanika0212/peptide-diffusion">Peptide Diffusion</a></b><br/>
+      <sub><i>Completed</i></sub>
       <br/><br/>
-      <sub>Time-travel debugger for LLM agents. Intercepts every step into a SQLite DAG. React dashboard scrubs backward through context windows, tool payloads, and token usage. Supports LangChain, OpenAI, and Anthropic.</sub>
+      <sub>Database-free peptide sequencing from tandem mass spectra with self-conditioned absorbing diffusion and spectrum-guided reranking. CSE 676 deep learning group project.</sub>
       <br/><br/>
-      <code>Python</code> <code>SQLite</code> <code>FastAPI</code> <code>React</code>
+      <code>PyTorch</code> <code>Diffusion</code> <code>Transformers</code>
     </td>
   </tr>
 </table>
