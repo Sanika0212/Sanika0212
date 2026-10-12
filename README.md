@@ -144,7 +144,14 @@
       <br/><br/>
       <code>Python</code> <code>Invariant mining</code> <code>Conformal prediction</code>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <b><a href="https://github.com/Sanika0212/Sufficiency">Sufficiency</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>Decides, before a RAG system answers, whether the retrieved context is enough. A calibrated estimate, abstention with a guaranteed error rate, and a learned recovery policy that matches the best fix at <b>half its cost</b>.</sub>
+      <br/><br/>
+      <code>scikit-learn</code> <code>Transformers</code> <code>Conformal prediction</code>
+    </td>
     <td valign="top"></td>
   </tr>
 </table>
