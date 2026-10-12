@@ -119,7 +119,7 @@
       <code>PyTorch</code> <code>Transformers</code> <code>PEFT/LoRA</code>
     </td>
     <td valign="top">
-      <b>UnMask</b><br/>
+      <b><a href="https://github.com/Sanika0212/NLP-UnMask">UnMask</a></b><br/>
       <sub><i>Completed</i></sub>
       <br/><br/>
       <sub>Socratic AI tutor for occupational therapy. <b>Progressive Context Revelation</b> gates answer chunks at the retrieval layer based on student mastery. DeBERTa NLI for mastery assessment, NetworkX prerequisite DAGs, dual-model routing across Llama 3.1 8B and GPT-4o.</sub>
