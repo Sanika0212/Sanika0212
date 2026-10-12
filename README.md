@@ -30,10 +30,10 @@
   <tr>
     <td width="170" align="center" valign="middle">
       <sub><b>NEXT</b></sub><br/>
-      <sub>in development</sub>
+      <sub>just released</sub>
     </td>
     <td valign="middle">
-      <b>Groundsight</b>: checks a RAG answer claim by claim against its sources, names why each unsupported claim went wrong, and confirms the cause by replaying the answer with the fix.<br/>
+      <b><a href="https://github.com/Sanika0212/Groundsight">Groundsight</a></b>: checks a RAG answer claim by claim against its sources, names why each unsupported claim went wrong, and confirms the cause by replaying the answer with the fix.<br/>
       <sub>MiniCheck and NLI checkers calibrated on RAGTruth's human labels (0.81 AUROC, against 0.61 for embedding similarity), conformal recall targets, root-cause triage and likelihood-based attribution. Runs locally on open models.</sub>
     </td>
   </tr>
@@ -93,8 +93,8 @@
       <code>PyTorch</code> <code>MedNeXt</code> <code>ViT</code> <code>MONAI</code>
     </td>
     <td valign="top">
-      <b>Groundsight</b><br/>
-      <sub><i>Active</i></sub>
+      <b><a href="https://github.com/Sanika0212/Groundsight">Groundsight</a></b><br/>
+      <sub><i>Released</i></sub>
       <br/><br/>
       <sub>Claim-level grounding checks for RAG answers. Flags unsupported claims with a calibrated recall guarantee, triages each into one of six causes and confirms the cause by counterfactual replay.</sub>
       <br/><br/>
