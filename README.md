@@ -135,6 +135,18 @@
       <code>PyTorch</code> <code>Diffusion</code> <code>Transformers</code>
     </td>
   </tr>
+  <tr>
+    <td valign="top">
+      <b><a href="https://github.com/Sanika0212/Tracelaw">Tracelaw</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>Learns the laws an agent's good runs obey (totals are sums, refunds match orders, ids were looked up first) and points at the first step a new run breaks one. Finds the faulty step in <b>98%</b> of failing runs with planted state bugs, at calibrated false-alarm rates.</sub>
+      <br/><br/>
+      <code>Python</code> <code>Invariant mining</code> <code>Conformal prediction</code>
+    </td>
+    <td valign="top"></td>
+    <td valign="top"></td>
+  </tr>
 </table>
 
 ---
