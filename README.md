@@ -152,7 +152,14 @@
       <br/><br/>
       <code>scikit-learn</code> <code>Transformers</code> <code>Conformal prediction</code>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <b><a href="https://github.com/Sanika0212/Citeright">Citeright</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>Checks every citation in a draft: the reference exists, it is the paper you meant, it is not retracted, and the cited work says what the sentence claims. Gives the right status to <b>97%</b> of references with planted faults, against 55% for a DOI check.</sub>
+      <br/><br/>
+      <code>OpenAlex</code> <code>Crossref</code> <code>DeBERTa NLI</code> <code>Calibration</code>
+    </td>
   </tr>
 </table>
 
