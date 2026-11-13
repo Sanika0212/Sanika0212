@@ -33,8 +33,8 @@
       <sub>just released</sub>
     </td>
     <td valign="middle">
-      <b><a href="https://github.com/Sanika0212/Groundsight">Groundsight</a></b>: checks a RAG answer claim by claim against its sources, names why each unsupported claim went wrong, and confirms the cause by replaying the answer with the fix.<br/>
-      <sub>MiniCheck and NLI checkers calibrated on RAGTruth's human labels (0.81 AUROC, against 0.61 for embedding similarity), conformal recall targets, root-cause triage and likelihood-based attribution. Runs locally on open models.</sub>
+      <b><a href="https://github.com/Sanika0212/Evidence-Gate">Evidence Gate</a></b>: checks every claim in a RAG answer against its sources before the answer reaches a reader, at a recall target each deployment chooses.<br/>
+      <sub>Five services with gRPC contracts on Kubernetes (Helm, Argo Rollouts canaries, SLO and drift alerts). MiniCheck in ONNX int8 reaches 0.89 AUROC on SciFact against 0.68 for embedding similarity, the promised 90% recall held at 0.90 on held-out claims, and a faulty release rolled back on its own in 91 seconds.</sub>
     </td>
   </tr>
   <tr>
@@ -159,6 +159,16 @@
       <sub>Checks every citation in a draft: the reference exists, it is the paper you meant, it is not retracted, and the cited work says what the sentence claims. Gives the right status to <b>97%</b> of references with planted faults, against 55% for a DOI check.</sub>
       <br/><br/>
       <code>OpenAlex</code> <code>Crossref</code> <code>DeBERTa NLI</code> <code>Calibration</code>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="3">
+      <b><a href="https://github.com/Sanika0212/Evidence-Gate">Evidence Gate</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>A trust gateway for RAG: every claim in an answer is checked against its sources before a reader sees it, at a recall each deployment chooses and measures without bias from reviewer labels. Five services on Kubernetes; MiniCheck reaches <b>0.89</b> AUROC on SciFact (0.68 for embedding similarity), and a leak test found none of 9,000 synthetic identifiers in any store, queue, log or trace.</sub>
+      <br/><br/>
+      <code>gRPC</code> <code>Kubernetes</code> <code>ONNX Runtime</code> <code>Conformal prediction</code> <code>Prometheus</code>
     </td>
   </tr>
 </table>
