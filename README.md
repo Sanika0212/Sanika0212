@@ -33,8 +33,8 @@
       <sub>just released</sub>
     </td>
     <td valign="middle">
-      <b><a href="https://github.com/Sanika0212/Evidence-Gate">Evidence Gate</a></b>: checks every claim in a RAG answer against its sources before the answer reaches a reader, at a recall target each deployment chooses.<br/>
-      <sub>Five services with gRPC contracts on Kubernetes (Helm, Argo Rollouts canaries, SLO and drift alerts). MiniCheck in ONNX int8 reaches 0.89 AUROC on SciFact against 0.68 for embedding similarity, the promised 90% recall held at 0.90 on held-out claims, and a faulty release rolled back on its own in 91 seconds.</sub>
+      <b><a href="https://github.com/Sanika0212/LeakCheck">LeakCheck</a></b>: finds the work a small contractor did and never billed, prices it from the record, and drafts the invoice for the owner to approve.<br/>
+      <sub>Signed webhooks into Kafka and Iceberg, dbt on DuckDB, five detectors, a local model reading the customer messages, and a LangChain agent that drafts. On three held-out businesses it finds 99.4% of the leaked dollars with 97.8% of flagged jobs real, where the report every field-service tool already shows finds 64.7%. A keyword-rules proof of concept was scored against the same bar first, and said no-go.</sub>
     </td>
   </tr>
   <tr>
@@ -162,13 +162,21 @@
     </td>
   </tr>
   <tr>
-    <td valign="top" colspan="3">
+    <td valign="top" colspan="2">
       <b><a href="https://github.com/Sanika0212/Evidence-Gate">Evidence Gate</a></b><br/>
       <sub><i>Released</i></sub>
       <br/><br/>
       <sub>A trust gateway for RAG: every claim in an answer is checked against its sources before a reader sees it, at a recall each deployment chooses and measures without bias from reviewer labels. Five services on Kubernetes; MiniCheck reaches <b>0.89</b> AUROC on SciFact (0.68 for embedding similarity), and a leak test found none of 9,000 synthetic identifiers in any store, queue, log or trace.</sub>
       <br/><br/>
       <code>gRPC</code> <code>Kubernetes</code> <code>ONNX Runtime</code> <code>Conformal prediction</code> <code>Prometheus</code>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/Sanika0212/LeakCheck">LeakCheck</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>Finds the work a small contractor did and never billed, prices it from the record, and drafts the invoice for approval. On held-out businesses it finds <b>99.4%</b> of the leaked dollars with <b>97.8%</b> of flagged jobs real, against 64.7% for the report every field-service tool already shows.</sub>
+      <br/><br/>
+      <code>Kafka</code> <code>Iceberg</code> <code>dbt</code> <code>DuckDB</code> <code>LangChain</code>
     </td>
   </tr>
 </table>
