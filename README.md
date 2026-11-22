@@ -5,7 +5,7 @@
 <h1 align="center">Sanika Najan</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=B5838D&center=true&vCenter=true&width=640&height=36&lines=AI+researcher+%2B+engineer;medical+VLMs+%C2%B7+production+RAG+%C2%B7+agentic+systems;M.Eng+AI+%E2%80%94+University+at+Buffalo;two+peer-reviewed+papers%2C+six+systems+in+flight" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=B5838D&center=true&vCenter=true&width=640&height=36&lines=AI+researcher+%2B+engineer;medical+VLMs+%C2%B7+production+RAG+%C2%B7+agentic+systems;M.Eng+AI+%E2%80%94+University+at+Buffalo;two+peer-reviewed+papers%2C+thirteen+systems+in+flight" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -33,8 +33,8 @@
       <sub>just released</sub>
     </td>
     <td valign="middle">
-      <b><a href="https://github.com/Sanika0212/FoldGate">FoldGate</a></b>: predicts how much a single amino-acid substitution changes a protein's function, with an interval honest enough that a lab can use it to pick which variants to put on the bench.<br/>
-      <sub>ESM-2 with LoRA on 0.73% of the weights, conformal intervals, an abstention rule, and a release gate. Coverage lands at <b>0.890</b> against a 0.90 target when the split keeps calibration and test exchangeable, and falls to <b>0.834</b> when whole stretches of the protein are held out instead: the gate rejects that model on coverage, which is what a gate is for. On three protein families never trained on, labelling <b>200</b> variants restores the guarantee. Mean Spearman 0.618 against 0.283 for zero-shot, and 0.655 for a ridge baseline it does not beat.</sub>
+      <b><a href="https://github.com/Sanika0212/ShiftBench">ShiftBench</a></b>: a grounding checker is a score and a threshold, and the threshold is where the guarantee lives. This measures what happens to it when the domain changes.<br/>
+      <sub>Four detectors calibrated to catch 90% of unsupported claims on one domain and applied to another, over five domains, 20 ordered pairs and 12,000 scores computed locally. The best detector keeps that promise on <b>55%</b> of cross-domain pairs; the worst pair caught <b>0.21</b> against the 0.90 it promised. Importance weighting, the standard repair, recovers <b>0.012</b> of recall and carries the diagnostics that say why. No label budget up to <b>400</b> restores the guarantee in every target domain. Drift statistics that need no labels correlate <b>0.56</b> with the recall lost, among the pairs that broke.</sub>
     </td>
   </tr>
   <tr>
@@ -180,13 +180,21 @@
     </td>
   </tr>
   <tr>
-    <td valign="top" colspan="3">
+    <td valign="top" colspan="2">
       <b><a href="https://github.com/Sanika0212/FoldGate">FoldGate</a></b><br/>
       <sub><i>Released</i></sub>
       <br/><br/>
       <sub>Variant effect prediction that says when a lab should measure instead of trusting the score. Conformal coverage of <b>0.890</b> against a 0.90 target, falling to <b>0.834</b> on a split that breaks exchangeability, where the release gate rejects it; <b>200</b> labels restore the guarantee on a protein family never trained on.</sub>
       <br/><br/>
       <code>ESM-2</code> <code>LoRA</code> <code>Conformal prediction</code> <code>ONNX Runtime</code> <code>MLflow</code>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/Sanika0212/ShiftBench">ShiftBench</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>Asks whether a grounding checker's calibrated threshold survives a change of domain. A promise of 90% recall on unsupported claims holds on <b>55%</b> of cross-domain pairs for the best of four detectors, and the worst pair caught <b>0.21</b>. No budget up to <b>400</b> target labels restores it everywhere.</sub>
+      <br/><br/>
+      <code>ONNX Runtime</code> <code>MiniCheck</code> <code>Conformal prediction</code> <code>Weighted conformal</code>
     </td>
   </tr>
 </table>
