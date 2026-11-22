@@ -33,8 +33,8 @@
       <sub>just released</sub>
     </td>
     <td valign="middle">
-      <b><a href="https://github.com/Sanika0212/LeakCheck">LeakCheck</a></b>: finds the work a small contractor did and never billed, prices it from the record, and drafts the invoice for the owner to approve.<br/>
-      <sub>Signed webhooks into Kafka and Iceberg, dbt on DuckDB, five detectors, a local model reading the customer messages, and a LangChain agent that drafts. On three held-out businesses it finds 99.4% of the leaked dollars with 97.8% of flagged jobs real, where the report every field-service tool already shows finds 64.7%. A keyword-rules proof of concept was scored against the same bar first, and said no-go.</sub>
+      <b><a href="https://github.com/Sanika0212/FoldGate">FoldGate</a></b>: predicts how much a single amino-acid substitution changes a protein's function, with an interval honest enough that a lab can use it to pick which variants to put on the bench.<br/>
+      <sub>ESM-2 with LoRA on 0.73% of the weights, conformal intervals, an abstention rule, and a release gate. Coverage lands at <b>0.890</b> against a 0.90 target when the split keeps calibration and test exchangeable, and falls to <b>0.834</b> when whole stretches of the protein are held out instead: the gate rejects that model on coverage, which is what a gate is for. On three protein families never trained on, labelling <b>200</b> variants restores the guarantee. Mean Spearman 0.618 against 0.283 for zero-shot, and 0.655 for a ridge baseline it does not beat.</sub>
     </td>
   </tr>
   <tr>
@@ -177,6 +177,16 @@
       <sub>Finds the work a small contractor did and never billed, prices it from the record, and drafts the invoice for approval. On held-out businesses it finds <b>99.4%</b> of the leaked dollars with <b>97.8%</b> of flagged jobs real, against 64.7% for the report every field-service tool already shows.</sub>
       <br/><br/>
       <code>Kafka</code> <code>Iceberg</code> <code>dbt</code> <code>DuckDB</code> <code>LangChain</code>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="3">
+      <b><a href="https://github.com/Sanika0212/FoldGate">FoldGate</a></b><br/>
+      <sub><i>Released</i></sub>
+      <br/><br/>
+      <sub>Variant effect prediction that says when a lab should measure instead of trusting the score. Conformal coverage of <b>0.890</b> against a 0.90 target, falling to <b>0.834</b> on a split that breaks exchangeability, where the release gate rejects it; <b>200</b> labels restore the guarantee on a protein family never trained on.</sub>
+      <br/><br/>
+      <code>ESM-2</code> <code>LoRA</code> <code>Conformal prediction</code> <code>ONNX Runtime</code> <code>MLflow</code>
     </td>
   </tr>
 </table>
